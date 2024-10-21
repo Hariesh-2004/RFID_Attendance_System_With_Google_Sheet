@@ -158,7 +158,7 @@ void loop() {
 
     int httpCode = http.POST(payload);
     if(httpCode > 0) {
-      if(httpCode == HTTP_CODE_OK) {
+      if(httpCode > 0) {
         lcd.clear();
         lcd.setCursor(0,0); //col=0 row=0
         lcd.print("Roll no: "+student_Rollno);
